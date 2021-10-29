@@ -1,6 +1,6 @@
 docker build -t sokolnikov90/multi-client:latest -t sokolnikov90/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t sokolnikov90/multi-server -t sokolnikov90/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t sokolnikov90/multi-worker sokolnikov90/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t sokolnikov90/multi-server:latest -t sokolnikov90/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t sokolnikov90/multi-worker:latest -t sokolnikov90/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push sokolnikov90/multi-client:latest
 docker push sokolnikov90/multi-server:latest
 docker push sokolnikov90/multi-worker:latest
